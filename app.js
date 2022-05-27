@@ -25,8 +25,7 @@ app.use(todoRoutes);
 async function start() {
     try {
         await mongooss.connect(DatabaseConnections, {
-            useNewUrlParser: true,
-            // useFindAndModify:false
+            useNewUrlParser: true
         });
         app.listen(port, () => {
             console.log('Server started');
