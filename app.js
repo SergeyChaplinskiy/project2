@@ -3,9 +3,9 @@ const express = require('express');
 const mongooss = require('mongoose');
 const todoRoutes = require('./routes/todos');
 const exprhbs = require('express-handlebars');
+const DatabaseConnections = process.env.DatabaseConnections;
 
-
-const port = process.env.port || 3000;
+const port = process.env.port;
 const app = express();
 
 const hbs = exprhbs.create({
