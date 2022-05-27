@@ -3,7 +3,7 @@ const express = require('express');
 const mongooss = require('mongoose');
 const todoRoutes = require('./routes/todos');
 const exprhbs = require('express-handlebars');
-const DatabaseConnections = 'mongodb+srv://sergey:1234@cluster0.7n4gt.mongodb.net/todos';
+
 
 const port = process.env.port || 3000;
 const app = express();
